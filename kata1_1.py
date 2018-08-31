@@ -1,8 +1,8 @@
 def noOdds(lst):
-	array = []
+	arry = []
 	for i in lst:
 		if i % 2 == 0:
-			array.append(i)
+			arry.append(i)
 			
-	return array
+	return arry
 	
