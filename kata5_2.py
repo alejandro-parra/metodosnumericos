@@ -1,15 +1,15 @@
     
     def minMaxLengthAverage(lst):
-      a = min(lst);
-	    b = max(lst);
-	    c = len(lst);
-	    d = (sum(lst))/c
-	    lista = [];
-  	  lista.append(a);
-	    lista.append(b);
-	    lista.append(c);
-	    lista.append(d);
-	    return lista;
+	mini = min(lst);
+	maxi = max(lst);
+	lengt = len(lst);
+	mid = (sum(lst))/c
+	lista = [];
+	lista.append(mini);
+	lista.append(maxi);
+	lista.append(lengt);
+	lista.append(mid);
+	return lista;
   
 
 	
