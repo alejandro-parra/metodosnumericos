@@ -191,8 +191,6 @@ def getMatrizInversa(A):
 
    return C
 
-
-
 A = createMatriz(6,6,0)
 
 A[0] = [0.866, 0, -0.50, 0, 0, 0]
@@ -202,14 +200,7 @@ A[3] = [-0.500, 0, 0, 0, -1, 0]
 A[4] = [0, 1, 0.5, 0, 0, 0]
 A[5] = [0, 0, -0.866, 0, 0, -1]
 
-
-
-# con la matrix inicial con la el pivoteo paracial deberia de dar:
-# F1 = -500 F2 = 433 F3 = -866 H2 = 0 V2 = 250 V3 = 750
-# Lo cual es A^-1 * C = [-500, 433, -866, 0, 250, 750] 
-
 C = createMatriz(6,1,0)
-
 C[0] = [0]
 C[1] = [-1000]
 C[2] = [0]
@@ -218,26 +209,7 @@ C[4] = [0]
 C[5] = [0]
 
 Ai = getMatrizInversa(A)
-B = mulMatrices(Ai, C)  # calculamos B (matris resultante)
-
+B = mulMatrices(Ai, C)
 print(B)
-print()
-# Y obtenemos:
-#B = [[-500.0220009680426], [433.0190528383249], [-866.0381056766498], [0.0], [250.0110004840213], [749.9889995159787]]
 
-
-
-
-
-# El fecto sobre la fuerzas horizontales cuando el viento sopla
-# de izquierda a derecha. Tenemos que C:
-
-C_Izq_Der = createMatriz(6,1,0)
-
-C_Izq_Der[0] = [-1000]
-C_Izq_Der[1] = [0]
-C_Izq_Der[2] = [-1000]
-C_Izq_Der[3] = [0]
-C_Izq_Der[4] = [0]
-C_Izq_Der[5] = [0]
-#print(C)
+#Profe el segundo ejercicio no lo pude hacer porque no me dieron los resultados correctos. Se movían 
